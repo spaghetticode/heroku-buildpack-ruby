@@ -74,6 +74,7 @@ class LanguagePack::Rails51 < LanguagePack::Rails5
     end
 
     def cleanup
+      return
       # does not call super because it would return if default_assets_cache was missing
       return if assets_compile_enabled?
 
